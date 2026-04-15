@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SubtitleMask-arm64-apple-macosx-debug.module": ["<SubtitleMask-arm64-apple-macosx-debug.module>"]
+  "main": ["<SubtitleMask-arm64-apple-macosx-debug.module>","<subtitle-mask-arm64-apple-macosx-debug.exe>"]
+  "subtitle-mask-arm64-apple-macosx-debug.exe": ["<subtitle-mask-arm64-apple-macosx-debug.exe>"]
+  "test": ["<SubtitleMask-arm64-apple-macosx-debug.module>","<subtitle-mask-arm64-apple-macosx-debug.exe>"]
+default: "main"
+nodes:
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask":
+    is-mutated: true
+commands:
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources"]
+    description: "Write auxiliary file /Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources"
+
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist"]
+    description: "Write auxiliary file /Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist"
+
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList"
+
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<SubtitleMask-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule"]
+    outputs: ["<SubtitleMask-arm64-apple-macosx-debug.module>"]
+
+  "<subtitle-mask-arm64-apple-macosx-debug.exe>":
+    tool: phony
+    inputs: ["<subtitle-mask-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    outputs: ["<subtitle-mask-arm64-apple-macosx-debug.exe>"]
+
+  "C.SubtitleMask-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule"]
+    description: "Compiling Swift Module 'SubtitleMask' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","SubtitleMask","-emit-dependencies","-emit-module","-emit-module-path","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule","-output-file-map","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/output-file-map.json","-incremental","-c","@/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources","-I","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","SubtitleMask_main","-parse-as-library","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","subtitle_mask_mac"]
+
+  "C.subtitle-mask-arm64-apple-macosx-debug.exe":
+    tool: shell
+    inputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList"]
+    outputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/subtitle-mask"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug","-o","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask","-module-name","subtitle_mask","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_SubtitleMask_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.subtitle-mask-arm64-apple-macosx-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist"]
+    outputs: ["<subtitle-mask-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/subtitle-mask"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Package.swift","/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

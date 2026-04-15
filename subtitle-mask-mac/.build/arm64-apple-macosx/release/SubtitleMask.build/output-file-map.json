@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/SubtitleMask.d",
+    "object": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/SubtitleMask.o",
+    "swift-dependencies": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/primary.swiftdeps"
+  },
+  "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift": {
+    "object": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/main.swift.o",
+    "swiftmodule": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/main.swiftdeps",
+    "diagnostics": "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/release/SubtitleMask.build/main.dia"
+  }
+}

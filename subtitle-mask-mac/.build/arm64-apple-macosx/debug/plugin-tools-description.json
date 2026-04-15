@@ -1,0 +1,243 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SubtitleMask-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources",
+      "importPath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "SubtitleMask",
+      "moduleOutputPath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule",
+      "objects" : [
+        "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SubtitleMask_main",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "subtitle_mask_mac"
+      ],
+      "outputFileMapPath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules/SubtitleMask.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift"
+      ],
+      "tempsPath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SubtitleMask" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SubtitleMask",
+      "-package-name",
+      "subtitle_mask_mac",
+      "-c",
+      "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift",
+      "-I",
+      "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SubtitleMask_main",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "subtitle_mask_mac",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SubtitleMask" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/Sources/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/sources"
+    },
+    "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask-entitlement.plist"
+    },
+    "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/SubtitleMask.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/subtitle-mask.product/Objects.LinkFileList"
+    },
+    "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/aizning/Documents/cursor file/subtitle tool/subtitle-mask-mac/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}
