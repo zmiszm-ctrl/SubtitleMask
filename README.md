@@ -1,5 +1,3 @@
-<img width="2854" height="1382" alt="image" src="https://github.com/user-attachments/assets/e4d9821e-f0a9-4048-9cef-af6bd0197bd3" /># Subtitle Mask（字幕遮挡条）
-
 这是一个简单的工具类产品：看剧/看视频时，用一个**永远置顶**的可伸缩遮挡条遮住中文字幕/本土字幕，保留英文字幕，便于练习英语。
 
 ## 现阶段（Mac）
