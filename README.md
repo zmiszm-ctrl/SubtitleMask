@@ -1,4 +1,4 @@
-# Subtitle Mask（字幕遮挡条）
+<img width="2854" height="1382" alt="image" src="https://github.com/user-attachments/assets/e4d9821e-f0a9-4048-9cef-af6bd0197bd3" /># Subtitle Mask（字幕遮挡条）
 
 这是一个简单的工具类产品：看剧/看视频时，用一个**永远置顶**的可伸缩遮挡条遮住中文字幕/本土字幕，保留英文字幕，便于练习英语。
 
@@ -17,9 +17,10 @@
 
 【如果你是Mac】通过SubtitleMask-1.0.0.dmg直接安装就可以了，当然你也可以自定义图片，注意大小、格式以及名字命名与原来的图片保持一致即可。Slice *.png
 
-支持1-30个央视。
+支持1-30个图案样式。
 
-![Uploading image.png…]()
+<img width="2854" height="1382" alt="image" src="https://github.com/user-attachments/assets/50a0d6cf-789a-47bf-9b3c-4c9e4ad26a92" />
+
 
 
 ## 运行方式（Mac）
